@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const FAMILY_PASSWORD = 'Gee2026';
+const FAMILY_PASSWORD = process.env.FAMILY_PASSWORD;
 
 export async function POST(request: NextRequest) {
   try {
