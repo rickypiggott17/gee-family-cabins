@@ -1,8 +1,8 @@
 import './globals.css'
-import { Inter, Georgia } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const georgia = Georgia({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-georgia' })
+const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-georgia' })
 
 export const metadata = {
   title: 'Gee Family Cabins - Mountain Retreats for Family Getaways',
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${georgia.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
