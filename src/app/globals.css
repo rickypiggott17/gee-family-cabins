@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-forest-green hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-forest-green border-2 border-forest-green font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-forest-green focus:border-transparent;
+  }
+}
+
+.react-calendar {
+  @apply w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-sm;
+}
+
+.react-calendar__navigation {
+  @apply flex items-center justify-between p-4 bg-forest-green text-white rounded-t-lg;
+}
+
+.react-calendar__navigation button {
+  @apply text-white hover:bg-green-600 p-2 rounded;
+}
+
+.react-calendar__month-view__days {
+  @apply grid grid-cols-7 gap-1 p-4;
+}
+
+.react-calendar__tile {
+  @apply p-3 text-center hover:bg-forest-green hover:text-white rounded transition-colors;
+}
+
+.react-calendar__tile--active {
+  @apply bg-forest-green text-white;
+}
+
+.react-calendar__tile--now {
+  @apply bg-warm-gold text-white;
+}
